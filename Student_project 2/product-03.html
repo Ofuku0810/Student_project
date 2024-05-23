@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="script.js">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <title>Lion's Spice - Tamim Teas</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <div class="header-logo">
+            <input type="text" class="search-bar" placeholder="Search">
+            <a class="search-button" id="search_btn" href="search.html"><i class='bx bx-search'></i></a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="list-products.html">Product</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html#services">Services</a>
+            <a href="cart.html"><i class='bx bx-cart-alt' ></i></a>
+        </nav>
+        <div class="cart-header-icon">
+            
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class='bx bx-menu' ></i>
+        </div>
+        <div class="carts-icon">
+            <a href="cart.html"> <i class='bx bx-cart-alt' ></i></a>
+        </div>
+    </header>
+    
+    <section class="sect_bck_alt">
+        <div class="flex_biography sect_content">
+            <article class="flex_article">
+                <!-- gallery -->
+                <div id="gallery">
+                    <img src="img/products/lionsspicefeatured2.jpg" alt="Image 1" class="gallery-image" style="width: 100%;">
+                    <img src="img/products/lionsspicefeatured03.jpg" alt="Image 2" class="gallery-image" style="width: 100%;">
+                    <img src="img/products/lionsspicefeatured04.jpg" alt="Image 3" class="gallery-image" style="width: 100%;">
+                    <button id="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <button id="next" onclick="changeImage(1)">&#10095;</button>
+                    <p class="rating" id="rating1">Rating: N/A</p>
+                </div>
+            </article>
+            <article class="article">
+                <div class="write-up">
+                    <h3 class="product__title heading-size--page-title">Lion's Spice | Lion's Mane Tea with Turmeric and Spice by Tamim Teas</h3>
+                    <p>FREE SHIPPING ON ORDERS OVER $25.00!</p>
+                    <span>$24.99</span>
+                    
+                    <i class='bx bx-cart-alt'></i>
+                    <label for="size">Select Size:</label>
+                    <select id="size">
+                        <option value="package">Package (3.4 OZ)</option>
+                        <option value="bulk">Bulk (1 lb)</option>
+                        <option value="sample">Sample</option>
+                    </select>
+                    <label for="size">Quantities:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="10" value="5" oninput="updateRating()">
+                    <a href="cart.html"><button class="add-to-cart" onclick="addToCart('Espresso')">Add to Cart</button></a>
+                    <button class="review-button" onclick="openReviewForm('reviews')">Write a Review</button>
+                    <p>
+                        <a href="#" title="Tamim Teas">Brand: Tamim Teas</a>
+                    </p>
+                    <p>There are several different types including black, oolong, green, and white. They all come from the same plant, Camellia sinensis, but the difference lies in how the leaves are treated after they are harvested.</p>
+                    <p>There are several different types including black, oolong, green, and white. They all come from the same plant, Camellia sinensis, but the difference lies in how the leaves are treated after they are harvested.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <section class="sect_bck_alt">
+        <div class="sect_content">
+            <h2>Recommended</h2>
+            <div class="flex_recommended product1"  id="product1">
+                
+                <div class="pro">
+                    <img src="img/products/ForrestWalkfeatured2.jpg" alt="">
+                    <div class="des">
+                        <span>Tamim Teas</span>
+                        <h5>Forest Walk | 100% Wellness Mushroom Tea by Tamim Teas</h5>
+                        <div class="star">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="product-01.html"><button class="image-details">details</button></a>
+                </div>
+                
+                <div class="pro">
+                    <img src="img/products/lionsspicefeatured2.jpg" alt="">
+                    <div class="des">
+                        <span>Tamim Teas</span>
+                        <h5>Lion's Spice | Lion's Mane Tea with Turmeric and Spice by Tamim Teas</h5>
+                        <div class="star">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$29.99</h4>
+                    </div>
+                    <a href="product-01.html"><button class="image-details">details</button></a>
+                </div>
+                
+                <div class="pro">
+                    <img src="img/products/ReishiDelightfeatured2.jpg" alt="">
+                    <div class="des">
+                        <span>Tamim Teas</span>
+                        <h5>Delight | Reishi Mushroom Tea with Cinnamon and Honeybush by Tamim Teas</h5>
+                        <div class="star">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="product-01.html"><button class="image-details">details</button></a>
+                </div>
+
+                <div class="pro">
+                    <img src="img/products/TraditionalTeaSampler.jpg" alt="">
+                    <div class="des">
+                      <span>Open Door Tea</span>
+                      <h5>Traditional Tea Sampler | 3 Loose Leaf Teas for Gifts & Tastings by Open Door Tea</h5>
+                      <div class="star">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                      </div>
+                      <h4>$9.54</h4>
+                    </div>
+                    <a href="product-01.html"><button class="image-details">details</button></a>
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--footer Start-->
+    <footer class="footer">
+        <div class="footer__col">
+            <h2 class="col__title">Web project</h2>
+            <p class="col__text">Pham The Tan</p>
+            <p class="col__text">Mayu Fukuhara</p>
+            <p class="col__text">© 2024 Web design Project</p>
+           
+        </div>
+        <div class="footer__col">
+            <h2 class="col__title">Contact us</h2>
+            <p class="col__text">Our Blog</p>
+            <p class="col__text">About us</p>
+          
+           
+        </div>
+        <div class="footer__col">
+            <h2 class="col__title">Customer support</h2>
+        
+            <p class="col__text">Shipping and Returns
+
+                </p>
+            <p class="col__text">Loyalty Program
+                
+               </p>
+            <p class="col__text"> Terms of Use
+                
+                Privacy Policy</p>
+                <p class="col__text">
+                
+                    Privacy Policy</p>
+
+           
+        </div>
+        <div class="footer__col">
+            <h2 class="col__title">Subcribe to our newsletter</h2>
+            <div class="footer__sub-form">
+                <input type="text" class="footer__sub-form-input" placeholder="Email address">
+                <button class="footer__sub-form-btn">Submit</button>
+            </div>
+           
+        </div>
+       
+       </footer>
+    <script>
+        let currentImageIndex = 1;
+        
+        
+        function addToCart(itemName) {
+            alert(itemName + ' added to cart!');
+        }
+        
+        
+        function openReviewForm(itemId) {
+            document.getElementById('reviewModal').style.display = 'block';
+            
+            document.getElementById('reviewModal').dataset.itemId = itemId;
+        }
+        
+        
+        function closeReviewForm() {
+            document.getElementById('reviewModal').style.display = 'none';
+        }
+        
+        
+        function submitReview() {
+            const itemId = document.getElementById('reviewModal').dataset.itemId;
+            const reviewText = document.getElementById('reviewText').value;
+            alert('Review submitted for Item ' + itemId + ': ' + reviewText);
+            
+            closeReviewForm();
+        }
+        
+        const menuIcon = document.querySelector('.menu-icon');
+        const nav = document.querySelector('nav');
+        
+        menuIcon.addEventListener('click', function () {
+            nav.classList.toggle('show');
+        });
+        
+        document.querySelector('.add-to-cart').addEventListener('click', function () {
+            
+            alert('Order Now button clicked!');
+        });
+        function incrementQuantity() {
+            var quantityInput = document.querySelector('.quantity-input');
+            var currentValue = parseInt(quantityInput.value);
+            if (currentValue < 10) {
+                quantityInput.value = currentValue + 1;
+            }
+        }
+        
+        function decrementQuantity() {
+            var quantityInput = document.querySelector('.quantity-input');
+            var currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        }
+        
+        function addToCart() {
+            var productName = document.querySelector('.product-title').textContent;
+            var price = document.querySelector('.price').textContent;
+            var quantity = document.querySelector('.quantity-input').value;
+            
+            console.log('Product added to cart:', {
+                productName: productName,
+                price: price,
+                quantity: quantity
+            });
+        }
+        
+    </script>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.gallery-image');
+        
+        function showImage(index) {
+            currentIndex = (index + images.length) % images.length;
+            
+            images.forEach((image, i) => {
+                if (i === currentIndex) {
+                    image.style.display = 'block';
+                } else {
+                    image.style.display = 'none';
+                }
+            });
+        }
+        
+        function changeImage(direction) {
+            showImage(currentIndex + direction);
+        }
+        
+        
+        showImage(currentIndex);
+    </script>
+    <script>
+        const ratings = [];
+        
+        function updateRating() {
+            const ratingInput = document.getElementById('rating');
+            const selectedRating = document.getElementById('selectedRating');
+            selectedRating.textContent = ratingInput.value;
+        }
+        
+        function calculateAverage() {
+            const ratingInput = document.getElementById('rating');
+            const averageRating = document.getElementById('averageRating');
+            
+            const ratingValue = parseInt(ratingInput.value);
+            if (!isNaN(ratingValue) && ratingValue >= 1 && ratingValue <= 10) {
+                ratings.push(ratingValue);
+                const average = ratings.reduce((sum, value) => sum + value, 0) / ratings.length;
+                averageRating.textContent = `Average: ${average.toFixed(2)}`;
+                ratingInput.value = ''; 
+            }
+        }
+        
+        
+        document.getElementById('rating').addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+                calculateAverage();
+            }
+        });
+    </script>
+</body>
+</html>

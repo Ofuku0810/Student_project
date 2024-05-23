@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="script.js">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    
+    <title>Cart</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <div class="header-logo">
+            <input type="text" class="search-bar" placeholder="Search">
+            <i class='bx bx-search' id="search-icon" ></i>
+            <a href="list-products.html"><button class="order-now">Order Now</button></a>
+        </div>
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="list-products.html">Product</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html#services">Services</a>
+            <a href="cart.html"><i class='bx bx-cart-alt' ></i></a>
+        </nav>
+        
+        <div class="menu-icon" id="menu-icon">
+            <i class='bx bx-menu' ></i>
+        </div>
+        <div class="carts-icon">
+            <a href="cart.html"> <i class='bx bx-cart-alt' ></i></a>
+        </div>
+    </header>
+    
+    <section class="cart" id="cart">
+        <div class="cart-wrapper">
+            <h2>Shopping cart</h2>
+            <div class="cart-project">
+                <div class="shop">
+                    <div class="boxx">
+                        <img src="img/products/ChagaChaifeatured2.jpg" alt="">
+                        <div class="content">
+                            <h3>Chaga Chai | Herbal Chai Tea With Chaga Mushroom & Turmeric By Tamim Teas</h3>
+                            <h4>Price: $20.36</h4>
+                            <p class="cart-unit">Quantity: <input type="number" value="3" /></p>
+                            <p class="cart-btn-area">
+                                <i class='bx bx-trash' ></i>
+                                <span class="btn">remove</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="boxx">
+                        <img src="img/products/ReishiDelightfeatured2.jpg" alt="">
+                        <div class="content">
+                            <h3>Delight | Reishi Mushroom Tea With Cinnamon And Honeybush By Tamim Teas</h3>
+                            <h4>Price: $20.36</h4>
+                            <p class="cart-unit">Quantity: <input type="number" value="2" /></p>
+                            <p class="cart-btn-area">
+                                <i class='bx bx-trash' ></i>
+                                <span class="btn">remove</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="boxx">
+                        <img src="img/products/TraditionalTeaSampler.jpg" alt="">
+                        <div class="content">
+                            <h3>Traditional Tea Sampler | 3 Loose Leaf Teas For Gifts & Tastings By Open Door Tea</h3>
+                            <h4>Price: $20.36</h4>
+                            <p class="cart-unit">Quantity: <input type="number" value="3"></p>
+                            <p class="cart-btn-area">
+                                <i class='bx bx-trash' ></i>
+                                <span class="btn">remove</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-bar">
+                    <p><span>Subtotal</span> <span>$149.79</span></p>
+                    <hr>
+                    <p><span>Tax (3%)</span> <span>$22.19</span></p>
+                    <hr>
+                    <p><span>Shipping</span> <span>$15</span></p>
+                    <hr>
+                    <p><span>total</span> <span>$226.98</span></p>
+                    <a href="order-processing.html" class="btn"><i class='bx bx-cart-alt' ></i> Checkout</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--footer Start-->
+    <footer class="footer">
+        <div class="footer__col">
+            <h2 class="col__title">Web project</h2>
+            <p class="col__text">Pham The Tan</p>
+            <p class="col__text">Mayu Fukuhara</p>
+            <p class="col__text">© 2024 Web design Project</p>
+           
+        </div>
+        <div class="footer__col">
+            <h2 class="col__title">Contact us</h2>
+            <p class="col__text">Our Blog</p>
+            <p class="col__text">About us</p>
+          
+           
+        </div>
+        <div class="footer__col">
+            <h2 class="col__title">Customer support</h2>
+        
+            <p class="col__text">Shipping and Returns
+
+                </p>
+            <p class="col__text">Loyalty Program
+                
+               </p>
+            <p class="col__text"> Terms of Use
+                
+                Privacy Policy</p>
+                <p class="col__text">
+                
+                    Privacy Policy</p>
+
+           
+        </div>
+        <div class="footer__col">
+            <h2 class="col__title">Subcribe to our newsletter</h2>
+            <div class="footer__sub-form">
+                <input type="text" class="footer__sub-form-input" placeholder="Email address">
+                <button class="footer__sub-form-btn">Submit</button>
+            </div>
+           
+        </div>
+       
+       </footer>
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('nav');
+    
+    menuIcon.addEventListener('click', function () {
+        nav.classList.toggle('show');
+    });
+    
+    document.querySelector('.order-now-button').addEventListener('click', function() {
+        
+        alert('Order Now button clicked!');
+    });
+    </script>
+</body>
+</html>
